@@ -1,0 +1,4 @@
+2026-07-26 18:15:03,932  INFO     === PycomViewer Start ===
+2026-07-26 18:15:03,932  INFO     pydicom 3.0.2 | Decoder verfuegbar: gdcm, pylibjpeg, libjpeg, openjpeg, pillow | Log: C:\Users\johan\nextcloud\Projects\DicomViewer\pycomviewer.log
+2026-07-26 18:15:06,706  INFO     Gruppierung: 1 Datei(en) -> 1 Serie(n).
+2026-07-26 18:15:06,718  INFO     Serie '(ohne Beschreibung)': 1 Schicht(en), Ebene=unknown.

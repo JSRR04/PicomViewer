@@ -1,0 +1,389 @@
+{
+  "_comment": "Umschaltbare Begriffe fuer PycomViewer. Modi: simple (Umgangssprache), med_de (Medizinisch Deutsch), med_en (Englisch medizinisch). Frei editierbar.",
+  "modes": {
+    "simple": "Einfach",
+    "med_de": "Medizinisch",
+    "med_en": "English"
+  },
+  "planes": {
+    "axial": {
+      "label": {
+        "simple": "Querschnitt (von oben)",
+        "med_de": "Axial / Transversal",
+        "med_en": "Axial (transverse)"
+      },
+      "explain": {
+        "simple": "Scheiben quer durch den Koerper, so als wuerde man von Kopf bis Fuss durchschneiden. Man schaut von oben.",
+        "med_de": "Transversalebene senkrecht zur Koerperlaengsachse. Blick von kranial nach kaudal.",
+        "med_en": "Transverse plane perpendicular to the long body axis; viewed head to feet."
+      }
+    },
+    "coronal": {
+      "label": {
+        "simple": "Von vorne / hinten",
+        "med_de": "Koronar / Frontal",
+        "med_en": "Coronal (frontal)"
+      },
+      "explain": {
+        "simple": "Scheiben, als wuerde man den Koerper von vorne nach hinten in Platten schneiden. Man schaut wie auf ein Foto von vorne.",
+        "med_de": "Frontalebene, teilt den Koerper in vorne (ventral) und hinten (dorsal).",
+        "med_en": "Frontal plane dividing the body into anterior and posterior portions."
+      }
+    },
+    "sagittal": {
+      "label": {
+        "simple": "Von der Seite",
+        "med_de": "Sagittal",
+        "med_en": "Sagittal"
+      },
+      "explain": {
+        "simple": "Scheiben von der Seite, als wuerde man den Koerper in eine linke und rechte Haelfte teilen. Blick wie im Profil.",
+        "med_de": "Sagittalebene, teilt den Koerper in links und rechts. Seitliche Ansicht.",
+        "med_en": "Sagittal plane dividing the body into left and right; lateral view."
+      }
+    },
+    "oblique": {
+      "label": {
+        "simple": "Schraege Ansicht",
+        "med_de": "Schraeg / Oblique",
+        "med_en": "Oblique"
+      },
+      "explain": {
+        "simple": "Eine schraege Schnittrichtung, die nicht genau von vorne, oben oder der Seite kommt.",
+        "med_de": "Angulierte Schnittfuehrung, keiner Standardebene eindeutig zugeordnet.",
+        "med_en": "Angled acquisition not aligned to a standard plane."
+      }
+    },
+    "unknown": {
+      "label": {
+        "simple": "Richtung unbekannt",
+        "med_de": "Orientierung unbekannt",
+        "med_en": "Orientation unknown"
+      },
+      "explain": {
+        "simple": "Zu diesem Bild fehlt die Lage-Information, die Blickrichtung kann nicht bestimmt werden.",
+        "med_de": "Kein ImageOrientationPatient-Tag vorhanden.",
+        "med_en": "No ImageOrientationPatient tag present."
+      }
+    }
+  },
+  "directions": {
+    "H": {
+      "simple": "Kopf",
+      "med_de": "kranial (H)",
+      "med_en": "Head (H)"
+    },
+    "F": {
+      "simple": "Fuesse",
+      "med_de": "kaudal (F)",
+      "med_en": "Feet (F)"
+    },
+    "A": {
+      "simple": "vorne",
+      "med_de": "ventral (A)",
+      "med_en": "Anterior (A)"
+    },
+    "P": {
+      "simple": "hinten",
+      "med_de": "dorsal (P)",
+      "med_en": "Posterior (P)"
+    },
+    "L": {
+      "simple": "links (Patient)",
+      "med_de": "links (L)",
+      "med_en": "Left (L)"
+    },
+    "R": {
+      "simple": "rechts (Patient)",
+      "med_de": "rechts (R)",
+      "med_en": "Right (R)"
+    }
+  },
+  "views": {
+    "front": {
+      "plane": "coronal",
+      "label": {
+        "simple": "Vorne",
+        "med_de": "Koronar",
+        "med_en": "Coronal"
+      }
+    },
+    "side": {
+      "plane": "sagittal",
+      "label": {
+        "simple": "Seite",
+        "med_de": "Sagittal",
+        "med_en": "Sagittal"
+      }
+    },
+    "top": {
+      "plane": "axial",
+      "label": {
+        "simple": "Oben (Scheiben)",
+        "med_de": "Axial",
+        "med_en": "Axial"
+      }
+    }
+  },
+  "ui": {
+    "series_title": {
+      "simple": "Bildserien (zum Ansehen ins Feld ziehen)",
+      "med_de": "Serien",
+      "med_en": "Series"
+    },
+    "view_title": {
+      "simple": "Was moechtest du sehen?",
+      "med_de": "Ebene waehlen",
+      "med_en": "Choose view"
+    },
+    "info_title": {
+      "simple": "Info zum Bild",
+      "med_de": "Bildinformation",
+      "med_en": "Image info"
+    },
+    "load_file": {
+      "simple": "Bild oeffnen",
+      "med_de": "Datei laden",
+      "med_en": "Open file"
+    },
+    "load_folder": {
+      "simple": "Untersuchung oeffnen",
+      "med_de": "Ordner / Serie laden",
+      "med_en": "Open folder"
+    },
+    "layout": {
+      "simple": "Fenster-Aufteilung",
+      "med_de": "Layout",
+      "med_en": "Layout"
+    },
+    "rows": {
+      "simple": "Zeilen",
+      "med_de": "Zeilen",
+      "med_en": "Rows"
+    },
+    "cols": {
+      "simple": "Spalten",
+      "med_de": "Spalten",
+      "med_en": "Cols"
+    },
+    "preset": {
+      "simple": "Helligkeit/Kontrast",
+      "med_de": "Fenster-Preset",
+      "med_en": "Window preset"
+    },
+    "metadata": {
+      "simple": "Bild-Daten ansehen",
+      "med_de": "Metadaten",
+      "med_en": "Metadata"
+    },
+    "export": {
+      "simple": "Als Foto speichern",
+      "med_de": "Bild exportieren",
+      "med_en": "Export image"
+    },
+    "help": {
+      "simple": "Hilfe / Erklaerungen",
+      "med_de": "Glossar",
+      "med_en": "Glossary"
+    },
+    "cine": {
+      "simple": "Abspielen",
+      "med_de": "Cine",
+      "med_en": "Cine"
+    },
+    "no_series": {
+      "simple": "Noch nichts geladen. Oben auf „Bild oeffnen“ oder „Untersuchung oeffnen“ klicken.",
+      "med_de": "Keine Serie geladen.",
+      "med_en": "No series loaded."
+    },
+    "drop_here": {
+      "simple": "Bild hierher ziehen",
+      "med_de": "Serie hierher ziehen",
+      "med_en": "Drop series here"
+    }
+  },
+  "tools": {
+    "pan": {
+      "label": {
+        "simple": "Verschieben",
+        "med_de": "Verschieben",
+        "med_en": "Pan"
+      },
+      "tip": {
+        "simple": "Bild mit gedrueckter Maus verschieben.",
+        "med_de": "Bild verschieben.",
+        "med_en": "Move the image."
+      }
+    },
+    "wl": {
+      "label": {
+        "simple": "Kontrast",
+        "med_de": "Fenster (W/L)",
+        "med_en": "Window/Level"
+      },
+      "tip": {
+        "simple": "Ziehen: rechts/links = Kontrast, hoch/runter = Helligkeit. Geht auch mit der rechten Maustaste.",
+        "med_de": "Window Width / Center anpassen.",
+        "med_en": "Adjust window width/center."
+      }
+    },
+    "length": {
+      "label": {
+        "simple": "Messen",
+        "med_de": "Strecke messen",
+        "med_en": "Length"
+      },
+      "tip": {
+        "simple": "Linie ziehen, um eine Laenge in mm zu messen.",
+        "med_de": "Distanzmessung in mm.",
+        "med_en": "Measure distance in mm."
+      }
+    },
+    "rect": {
+      "label": {
+        "simple": "Rechteck",
+        "med_de": "ROI Rechteck",
+        "med_en": "Rectangle ROI"
+      },
+      "tip": {
+        "simple": "Rechteck aufziehen; zeigt Mittelwert und Bereich der Bildwerte.",
+        "med_de": "Rechteck-ROI mit Statistik.",
+        "med_en": "Rectangular ROI with statistics."
+      }
+    },
+    "ellipse": {
+      "label": {
+        "simple": "Kreis",
+        "med_de": "ROI Ellipse",
+        "med_en": "Ellipse ROI"
+      },
+      "tip": {
+        "simple": "Ovale Flaeche markieren; zeigt Mittelwert und Bereich.",
+        "med_de": "Ellipsen-ROI mit Statistik.",
+        "med_en": "Elliptical ROI with statistics."
+      }
+    },
+    "arrow": {
+      "label": {
+        "simple": "Pfeil",
+        "med_de": "Pfeil",
+        "med_en": "Arrow"
+      },
+      "tip": {
+        "simple": "Pfeil setzen, um auf etwas zu zeigen.",
+        "med_de": "Pfeil-Annotation.",
+        "med_en": "Arrow annotation."
+      }
+    },
+    "probe": {
+      "label": {
+        "simple": "Wert",
+        "med_de": "Pixel-Sonde",
+        "med_en": "Pixel probe"
+      },
+      "tip": {
+        "simple": "Maus uebers Bild bewegen, um den Wert an dieser Stelle zu sehen.",
+        "med_de": "Pixelwert unter dem Cursor.",
+        "med_en": "Pixel value under cursor."
+      }
+    }
+  },
+  "glossary": {
+    "series": {
+      "term": {
+        "simple": "Bildserie",
+        "med_de": "Serie",
+        "med_en": "Series"
+      },
+      "text": {
+        "simple": "Eine Gruppe zusammengehoeriger Bilder, z. B. alle Scheiben einer Aufnahme.",
+        "med_de": "Zusammengehoerige Schichten einer Akquisition (SeriesInstanceUID).",
+        "med_en": "A set of related images from one acquisition."
+      }
+    },
+    "slice": {
+      "term": {
+        "simple": "Schicht / Scheibe",
+        "med_de": "Schicht",
+        "med_en": "Slice"
+      },
+      "text": {
+        "simple": "Ein einzelnes Schnittbild. Mit dem Mausrad blaettert man durch die Schichten.",
+        "med_de": "Einzelne Schnittebene des Volumens.",
+        "med_en": "A single cross-sectional image; scroll with the mouse wheel."
+      }
+    },
+    "window": {
+      "term": {
+        "simple": "Helligkeit & Kontrast",
+        "med_de": "Fensterung (Window/Level)",
+        "med_en": "Window/Level"
+      },
+      "text": {
+        "simple": "Legt fest, welcher Helligkeitsbereich sichtbar ist. So macht man z. B. Knochen oder Weichteile besser sichtbar.",
+        "med_de": "Window Center bestimmt die Helligkeit, Window Width den Kontrastbereich der abgebildeten Werte.",
+        "med_en": "Center sets brightness, width sets the contrast range of displayed values."
+      }
+    },
+    "roi": {
+      "term": {
+        "simple": "Markierung / Messbereich",
+        "med_de": "ROI (Region of Interest)",
+        "med_en": "ROI (region of interest)"
+      },
+      "text": {
+        "simple": "Ein von dir markierter Bereich; das Programm zeigt dazu Durchschnitts- und Grenzwerte.",
+        "med_de": "Interessensregion mit Statistik (Mittelwert, SD, Min/Max).",
+        "med_en": "A marked region with statistics (mean, SD, min/max)."
+      }
+    },
+    "hu": {
+      "term": {
+        "simple": "Dichtewert (CT)",
+        "med_de": "Hounsfield-Einheit (HU)",
+        "med_en": "Hounsfield Unit (HU)"
+      },
+      "text": {
+        "simple": "Ein Zahlenwert im CT fuer die Gewebedichte: Luft sehr niedrig, Knochen sehr hoch, Wasser = 0.",
+        "med_de": "Genormte CT-Dichteskala: Wasser 0 HU, Luft -1000 HU, Knochen > 300 HU.",
+        "med_en": "Standardized CT density scale: water 0, air -1000, bone > 300."
+      }
+    },
+    "mm": {
+      "term": {
+        "simple": "Echte Groesse (mm)",
+        "med_de": "Pixelabstand",
+        "med_en": "Pixel spacing"
+      },
+      "text": {
+        "simple": "Aus den Bilddaten kennt das Programm die echte Groesse, daher werden Messungen in Millimetern angezeigt.",
+        "med_de": "PixelSpacing erlaubt metrische Messungen in mm.",
+        "med_en": "PixelSpacing enables real-world measurements in mm."
+      }
+    },
+    "cine": {
+      "term": {
+        "simple": "Automatisch abspielen",
+        "med_de": "Cine-Modus",
+        "med_en": "Cine"
+      },
+      "text": {
+        "simple": "Spielt die Schichten wie einen Film nacheinander ab.",
+        "med_de": "Automatische Wiedergabe der Schichten als Loop.",
+        "med_en": "Plays the slices as a loop."
+      }
+    },
+    "metadata": {
+      "term": {
+        "simple": "Bild-Daten",
+        "med_de": "Metadaten",
+        "med_en": "Metadata"
+      },
+      "text": {
+        "simple": "Zusatzinfos, die im Bild gespeichert sind (Patient, Geraet, Aufnahme). Ansehen, durchsuchen und aendern moeglich.",
+        "med_de": "DICOM-Tags: durchsuchbar und editierbar.",
+        "med_en": "DICOM tags: searchable and editable."
+      }
+    }
+  }
+}
